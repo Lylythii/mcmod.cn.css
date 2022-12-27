@@ -1,0 +1,734 @@
+.top-main.frame{
+    width:100%;
+    height:49px;
+    margin:0 auto;
+    background:#3c454c;
+    box-shadow:0 0 0 #FFF;
+    position:relative
+}
+.top-main.frame *{
+    text-decoration:none
+}
+.f-icon{
+    background-image:url('//www.mcmod.cn/images/frame-icon.png');
+    background-repeat:no-repeat
+}
+.top-main{
+    height:49px;
+    border-bottom:0
+}
+.top-main .has-pulldown{
+    cursor:url(//www.mcmod.cn/images/cursor/hand.png),auto;
+    position:relative;
+    *z-index:999
+}
+.top-main .pulldown{
+    position:absolute;
+    cursor:default;
+    display:none
+}
+.top-main .pulldown .arrow{
+    *margin-bottom:-1px;
+    _margin-bottom:0;
+    height:0;
+    width:0;
+    font-size:0;
+    line-height:0;
+    border-width:7px;
+    border-style:solid;
+    border-color:transparent transparent #f6f6f9 transparent;
+    _filter:chroma(color=tomato);
+    _border-color:tomato tomato #f6f6f9 tomato;
+    position:relative;
+    display:block;
+    left:20px;
+    z-index:2
+}
+.top-main .pulldown .top_content{
+    background:black;
+    color:black;
+    text-align:left;
+    border-radius:3px;
+    border:white 1px solid;
+    border-width:0 1px 1px 1px;
+    box-shadow:0 2px 4px rgba(0,0,0,.2);
+    position:relative;
+    z-index:1;
+    left:-20px
+}
+.top-main .pulldown-canvas{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    filter:alpha(opacity=0)
+}
+.top-main .logo{
+    background-image:url('//www.mcmod.cn/static/public/images/logo.png?v=4');
+    background-repeat:no-repeat;
+    height:34px;
+    width:98px;
+    background-size:100%;
+    float:left;
+    margin-top:8px!important
+}
+.top-main .navs{
+    padding:0 0 3px 25px;
+    display:inline-block
+}
+.top-main .navs a,.top-main .info a,.top-main .navs a:visited,.top-main .info a:visited,.top-main .navs a:active,.top-main .info a:active{
+    color:#d8d8d8
+}
+.top-main .navs a:hover,.top-main .navs a:active{
+    text-decoration:none;
+    background-color:#323a40
+}
+.top-main .navs .def-nav,.top-main .navs .pulldown-nav,.top-main .navs .separate{
+    display:block;
+    float:left;
+    height:48px;
+    font-size:16px;
+    text-decoration:none;
+    color:#d8d8d8;
+    text-align:center;
+    width:85px;
+    line-height:48px
+}
+.top-main .navs .def-nav .app-url{
+    left:-217px;
+    top:48px;
+    position:absolute
+}
+.top-main .navs .def-nav .pulldown-canvas-url{
+    width:775px;
+    height:109px
+}
+.top-main .navs .def-nav .app-url .arrow{
+    left:140px
+}
+.top-main .navs .app-url .top_content{
+    padding:17px 0 0 22px;
+    height:100px
+}
+.top-main .top-username{
+    margin: 0 5px
+}
+.top-main .navs .app-url .top_content a,.top-main .navs .app-url .top_content a:hover{
+    color:#333
+}
+.top-main .navs .app-url .li{
+    cursor:url(//www.mcmod.cn/images/cursor/hand.png),auto;
+    padding-top:8px;
+    width:110px;
+    height:75px;
+    border-radius:3px;
+    display:block;
+    float:left;
+    text-align:center
+}
+.top-main .navs .app-url .li:hover{
+    background-color:#e0e1e5
+}
+.top-main .navs .app-url .li .icon{
+    margin:0 auto;
+    width:35px;
+    height:38px;
+    display:block;
+    background:url('//www.mcmod.cn/images/dropdown_menu.png') no-repeat
+}
+.top-main .navs .app-url .li:hover .icon{
+    filter:alpha(opacity=50);
+    -moz-opacity:.5;
+    -khtml-opacity:.5;
+    opacity:.5
+}
+.top-main .navs .app-url .tctool .icon{
+    background-position:-35px 0
+}
+.top-main .navs .app-url .achievements .icon{
+    background-position:-70px 0
+}
+.top-main .navs .app-url .relationship .icon{
+    background-position:-105px 0
+}
+.top-main .navs .app-url .secretcode .icon{
+    background-position:-140px 0
+}
+.top-main .navs .app-url .introuble .icon{
+    background-position:-175px 0
+}
+.top-main .navs .app-url .cbcreator .icon{
+    background-position:-210px 0
+}
+.top-main .navs .app-url .note .icon{
+    background-position:-105px 0
+}
+.top-main .navs .app-url .duanxin .icon{
+    background-position:-140px 0
+}
+.top-main .navs .app-url .zhaohui .icon{
+    background-position:-175px 0
+}
+.top-main .navs .app-url .youxi .icon{
+    background-position:-210px 0
+}
+.top-main .navs .app-url .jiankang .icon{
+    background-position:-245px 0
+}
+.top-main .navs .app-url .wenzhang .icon{
+    background-position:-280px 0
+}
+.top-main .navs .app-url .li .text{
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#ffffff;
+    text-decoration:none;
+    font-size:14px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap
+}
+.top-main .navs .separate{
+    margin:0;
+    height:48px;
+    width:2px;
+    background:#2a2b2d
+}
+.top-main .navs .pulldown-nav{
+    position:relative
+}
+.top-main .navs .pulldown-nav em{
+    position:absolute;
+    display:block;
+    right:10px;
+    top:18px;
+    height:12px;
+    width:12px;
+    font-size:0;
+    background-position:-89px -45px
+}
+.top-main .navs .pulldown-nav:hover .f-icon,.top-main .navs .pulldown-nav:active .f-icon{
+    position:absolute;
+    display:block;
+    right:11px;
+    top:18px;
+    height:12px;
+    width:12px;
+    font-size:0;
+    background-position:-89px -55px
+}
+.top-main .navs .current,.top-main .navs .current .pulldown-nav{
+    display:inline-block;
+    width:120px;
+    height:49px;
+    text-align:center;
+    line-height:48px
+}
+.top-main .navs .current:hover{
+    color:#ececec
+}
+.top-main .navs .current .hover{
+    background-color:#f6f6f6;
+    color:#333
+}
+.has-pulldown-special{
+    position:relative
+}
+.top-main .info,.top-main .info ul{
+    padding:3px 0;
+    text-align:right;
+    float:right
+}
+.top-main .info a{
+    color:#d8d8d8
+}
+.top-main .info a:hover{
+    color:#FFF
+}
+.top-main .info .info-i{
+    padding:0 10px;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    height:16px;
+    border-right:#393939 1px solid;
+    color:#d8d8d8;
+    font-size:12px
+}
+.top-main .info .info-i.default-text{
+    height:35px;
+    padding:0 5px 0 0!important;
+    display:inline-block
+}
+.top-main .info .info-i.user-name{
+    height:35px;
+    display:inline-block
+}
+.top-main .info .has-pulldown{
+    padding-right:28px
+}
+.top-main .info .pull-arrow{
+    display:block;
+    width:12px;
+    height:9px;
+    margin-top:1px;
+    margin-right:5px;
+    font-size:0;
+    background-position:-89px -45px;
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 13px;
+}
+.top-main .info .no-separate{
+    border:0
+}
+.top-main .info .user-name{
+    position:relative;
+    padding-right:0
+}
+.top-main .info .user-name a{
+    height:35px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:left;
+    word-break:break-all;
+    word-wrap:break-word
+}
+.top-main .tips_on,.top-main .tips_off{
+    height:16px;
+    width:16px;
+    float:right;
+    margin:14px 0 0 0
+}
+.top-main .tips_off{
+    background-image:url('//www.mcmod.cn/images/tips_off.gif')
+}
+.top-main .tips_on{
+    background-image:url('//www.mcmod.cn/images/tips_on.gif')
+}
+.top-main .info .user-info,.top-main .info .more-info{
+    top:25px;
+    left:auto;
+    right:-24px;
+    width:116px
+}
+.top-main .info .notice-nu{
+    display:inline-block;
+    padding-left:4px;
+    background-position:-86px -109px;
+    height:14px;
+    -webkit-text-size-adjust:none;
+    font-size:10px;
+    font-style:normal
+}
+.top-main .info .notice-nu .f-icon{
+    display:inline-block;
+    padding-right:4px;
+    background-position:right -109px;
+    color:#FFF
+}
+.top-main .info .user-info .arrow{
+    left:70px;
+    *left:-32px
+}
+.top-main .info .user-info .top_content,.top-main .info .more-info .top_content{
+    padding:10px 0
+}
+.top-main .info .more{
+    padding:0;
+    display:inline;
+    line-height:inherit;
+    background:0
+}
+.top-main .info .more-info .top_content{
+    height:280px
+}
+.top-main .info .user-info .top_content a,.top-main .info .more-info .top_content a{
+    display:block;
+    padding-left:33px;
+    height:30px;
+    line-height:30px;
+    color:#888;
+    -webkit-transition:all .3s ease 0s;
+    -moz-transition:all .3s ease 0s;
+    -o-transition:all .3s ease 0s;
+    transition:all .3s ease 0s
+}
+.top-main .info .user-info .top_content a:hover,.top-main .info .more-info .top_content a:hover{
+    color:#333;
+    text-decoration:none;
+    background:#e0e1e5
+}
+.top-main .info .user-info .li,.top-main .info .more-info .li{
+    display:block;
+    padding:2px 0;
+    height:30px
+}
+.top-main .info .user-info .separate-li,.top-main .info .more-info .separate-li{
+    display:block;
+    margin:3px 11px;
+    border-top:#ebebec 1px solid;
+    border-bottom:#FFF 1px solid
+}
+.top-main .info .more-info{
+    right:0
+}
+.top-main .info .more-info .arrow{
+    left:94px;
+    *left:-8px
+}
+.top-main .info .info-icon img{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    border:1px solid #ffffff;
+    float:left
+}
+.top-main .info .info-icon{
+    margin-right:5px;
+    float:left
+}
+.def-nav.on,.pulldown-nav.on{
+    font-weight:bold!important;
+    color:#EEE!important;
+    background-color:#323a40!important
+}
+.search_box{
+    right:40px;
+    top:49px;
+    padding:5px 0 10px 10px;
+    display:none;
+    position:absolute;
+    background-color:#3d454c;
+    border-radius:0 0 5px 5px
+}
+.search_box #key{
+    width:200px;
+    height:25px;
+    line-height:30px;
+    font-size:14px;
+    padding:0 0 0 5px;
+    border:1px solid #CCC;
+    color:#a0a0a0;
+    float:left
+}
+.search_box #btn{
+    width:50px;
+    height:25px;
+    line-height:22px;
+    border:1px solid #3d454c;
+    background-color:#3d454c;
+    text-align:center;
+    color:#FFF;
+    cursor:url(//www.mcmod.cn/images/cursor/hand.png),auto;
+    float:left
+}
+.search_btn{
+    cursor:url(//www.mcmod.cn/images/cursor/hand.png),auto;
+    font-size:20px;
+    line-height:40px;
+    display:inline
+}
+.search_btn:hover{
+    color:#FFF
+}
+.top-main .info ul{
+    width:auto;
+    margin-right:0
+}
+.top-main .info li{
+    display:inline-block;
+    font-size:14px;
+    margin-right:8px;
+    line-height:35px;
+    vertical-align:top
+}
+.top-main .info li a{
+    display:inline-block
+}
+.top-main .info .info-i.default-text{
+    margin-right:8px!important
+}
+.top-slide{
+    width:16px;
+    height:16px;
+    background-image:url(//www.mcmod.cn//www.mcmod.cn/images/top_slide.png);
+    position:fixed;
+    right:50%;
+    top:40px;
+    z-index:999;
+    cursor:pointer
+}
+.top-slide.on{
+    background-position:0 -16px
+}
+.top-main .navs .app-url .top_content{
+    width:595px
+}
+#mcmod-donate-qr{
+    width:200px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    background-color:#FFF;
+    z-index:101;
+    display:none;
+    -webkit-transform:translateZ(0)
+}
+#mcmod-donate-qr .donate-nav{
+    width:100%;
+    height:30px;
+    line-height:30px
+}
+#mcmod-donate-qr .donate-nav .checkbox{
+    margin:0;
+    padding:0;
+    position:absolute;
+    right:10px;
+    top:2px;
+    font-size:12px;
+    color:#ffffff
+}
+#mcmod-donate-qr .donate-nav .checkbox label{
+    padding-left:2px
+}
+#mcmod-donate-qr i{
+    margin-left:10px
+}
+#mcmod-donate-qr img{
+    width:200px;
+    height:200px;
+    display:block
+}
+#mcmod-donate-qr i{
+    line-height:30px;
+    cursor:url(//www.mcmod.cn/images/cursor/hand.png),auto;
+    font-size:16px
+}
+.header-area{
+    padding:0 15px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    height:49px;
+    background:#3c454c;
+    -webkit-transition:all .3s ease 0s;
+    -moz-transition:all .3s ease 0s;
+    -o-transition:all .3s ease 0s;
+    transition:all .3s ease 0s;
+    box-shadow:0 0 5px #333
+}
+.header-area .header-container{
+    max-width:1200px;
+    padding:0 15px;
+    margin:0 auto
+}
+.header-area .header-container .col-lg-12{
+    padding:0
+}
+.header-area.header-sticky .logo{
+    margin-top:12px
+}
+.header-area.header-sticky .light-logo{
+    display:none
+}
+.header-area.header-sticky .nav li a{
+    color:#FFF
+}
+.header-area.header-sticky .nav li a:hover{
+    color:#FFF
+}
+.header-area.header-sticky .nav li a.btn-nav-line{
+    border:1px solid #4886ff;
+    color:#4886ff
+}
+.header-area .main-nav .logo{
+    float:left;
+    margin-top:30px;
+    -webkit-transition:all .3s ease 0s;
+    -moz-transition:all .3s ease 0s;
+    -o-transition:all .3s ease 0s;
+    transition:all .3s ease 0s
+}
+.header-area .main-nav .logo img{
+    -webkit-transition:all .3s ease 0s;
+    -moz-transition:all .3s ease 0s;
+    -o-transition:all .3s ease 0s;
+    transition:all .3s ease 0s
+}
+.header-area .main-nav .dark-logo{
+    display:none
+}
+.header-area .main-nav .nav{
+    margin-top:49px;
+    -webkit-transition:all .3s ease 0s;
+    -moz-transition:all .3s ease 0s;
+    -o-transition:all .3s ease 0s;
+    transition:all .3s ease 0s
+}
+.header-area .main-nav .nav li{
+    margin-left:35px
+}
+.header-area .main-nav .nav li a{
+    display:block;
+    font-size:14px;
+    -webkit-transition:all .3s ease 0s;
+    -moz-transition:all .3s ease 0s;
+    -o-transition:all .3s ease 0s;
+    transition:all .3s ease 0s;
+    height:50px;
+    line-height:50px;
+    border:transparent
+}
+.header-area .main-nav .nav li a:hover{
+    color:#f7f8ff
+}
+.header-area .main-nav .nav li a.btn-nav-line{
+    border:1px solid #fff;
+    width:140px;
+    height:36px;
+    line-height:36px;
+    text-align:center;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:100px;
+    -webkit-transition:all .3s ease 0s;
+    -moz-transition:all .3s ease 0s;
+    -o-transition:all .3s ease 0s;
+    transition:all .3s ease 0s
+}
+.header-area .main-nav .nav li a.btn-nav-line:hover{
+    background:#fff;
+    color:#4886ff
+}
+.header-area .main-nav .menu-trigger{
+    cursor:url(//www.mcmod.cn/images/cursor/hand.png),auto;
+    display:block;
+    position:absolute;
+    top:14px;
+    left:110px;
+    width:20px;
+    height:20px;
+    font-size:20px;
+    z-index:9999
+}
+.header-area .main-nav .menu-trigger i{
+    color:#d8d8d8;
+    display:block
+}
+@media(max-width:1200px){
+    .top-main .top-username{
+        display:none
+    }
+}
+@media(max-width:991px){
+    .header-area{
+        background:#3c454c
+    }
+    .header-area .logo{
+        margin-left:30px
+    }
+    .header-area .light-logo{
+        display:none!important
+    }
+    .header-area .dark-logo{
+        display:block!important
+    }
+    .header-area .menu-trigger{
+        display:block!important
+    }
+    .header-area .main-nav{
+        overflow:hidden
+    }
+    .header-area .main-nav .nav{
+        position:absolute;
+        left:20px;
+        top:0;
+        width:200px;
+        display:none;
+        border:1px solid #afafaf;
+        -webkit-transition:all 0s ease 0s;
+        -moz-transition:all 0s ease 0s;
+        -o-transition:all 0s ease 0s;
+        transition:all 0s ease 0s;
+        box-shadow:0 2px 4px rgba(0,0,0,.2);
+        border-radius:3px
+    }
+    .header-area .main-nav .nav li{
+        width:100%;
+        margin-left:15px!important;
+        background:#fff;
+        margin:0!important;
+        border-bottom:1px solid #f5f5f5
+    }
+    .header-area .main-nav .nav li a{
+        height:50px!important;
+        line-height:50px!important;
+        padding:0!important;
+        padding-left:30px!important;
+        border:none!important;
+        background:#f6f6f9!important;
+        color:#888!important
+    }
+    .header-area .main-nav .nav li a:hover{
+        background:#e0e1e5!important;
+        color:#333!important
+    }
+    .header-area .main-nav .nav li a.btn-nav-line{
+        border:none!important;
+        width:100%;
+        height:50px;
+        line-height:50px;
+        text-align:left;
+        -webkit-border-radius:0;
+        -moz-border-radius:0;
+        border-radius:0
+    }
+    .top-main .navs{
+        display:none
+    }
+}
+@media(min-width:1920px){
+    .header-area .header-container{
+        max-width:4000px;
+        padding:0 200px
+    }
+}
+@media(min-width:992px){
+    .header-area .main-nav{
+        display:none!important
+    }
+}
+@media(max-width:991px){
+    #mcmod-donate-qr{
+        width:150px
+    }
+    #mcmod-donate-qr img{
+        width:150px;
+        height:150px
+    }
+}
+@media(max-width:400px){
+    .top-main .info .info-i.default-text span{
+        display:none!important
+    }
+    .weiboConnect{
+        display:none!important
+    }
+    #mcmod-donate-qr{
+        display:none!important
+    }
+}
+@media(max-width:300px){
+    .top-main .info ul{
+        display:none!important
+    }
+    .tips_off,.tips_on{
+        display:none
+    }
+}
